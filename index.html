@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>DTRT</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/NanumGothic.css">
+<link rel="stylesheet" href="css/oswald.css">
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.scrollTo-min.js"></script>
+<script>
+	jQuery(function(){
+		var win_w = $(window).width()
+		var win_h = $(window).height()
+
+		$('.lnb').hide()
+		$('#headerWrap').mouseenter(function(){
+			$('#headerWrap').stop().animate({height:270})
+			$('.lnb').show()
+		})
+		$('#headerWrap').mouseleave(function(){
+			$('#headerWrap').stop().animate({height:100})
+			$('.lnb').hide()
+		})
+		//main btnScrolldown
+		$('#btnScroll').click(function(){
+			$('html, body').animate({scrollTop:win_h},1500)
+		})
+	});
+</script>
+
+</head>
+<body>
+<div id="visual">
+	<div id="maintxtBox">
+		<div class="txt01">
+			<span>깊이 생각하세요.</span>
+			<span>결심하세요.</span>
+			<span>그리고 실행에 옮기세요.</span>
+		</div>
+		<div class="txt02">
+			<span>DO THE RIGHT THING</span>
+		</div>
+	</div><!-- end maintxtBox -->
+	<div id="scrolldown">
+		<a href="#"><img id ="btnScroll" src="img/scrolldownicon2.png" alt="btnscrolldown" /></a>
+	</div>
+
+	<div id="headerWrap">
+		<div id="header">
+			<h1 class="logo"><a href="#"><img src="img/logo.png" alt="DTRT 로고" /></a></h1>
+			<ul class="gnb">
+				<li><a href="#">SHOP</a>
+					<ul class="lnb" id="lnbFirst">
+						<li><a href="#">ALL</a></li>
+						<li><a href="#">CLEANSING</a></li>
+						<li><a href="#">SKIN CARE</a></li>
+						<li><a href="#">MAKE_UP</a></li>
+						<li><a href="#">DTRT SET</a></li>
+					</ul>
+				</li>
+				<li><a href="#">DTRT NOW</a>
+					<ul class="lnb">
+						<li><a href="#">DTRT FESTIVAL</a></li>
+					</ul>
+				</li>
+				<li><a href="#">COMMUNITY</a>
+					<ul class="lnb">
+						<li><a href="#">REVIEW</a></li>
+					</ul>
+				</li>
+				<li><a href="#">EVENT</a>
+					<ul class="lnb">
+						<li><a href="#">LIST</a></li>
+						<li><a href="#">RESULT</a></li>
+					</ul></li>
+				<li><a href="#">BRAND</a>
+					<ul class="lnb">
+						<li><a href="#">STORY</a></li>
+						<li><a href="#">MOVIE</a></li>
+						<li><a href="#">AD</a></li>
+						<li><a href="#">SHOP INFO</a></li>
+					</ul></li>
+				<li><a href="#"><img src="img/search.png" alt="검색" /></a></li>
+			</ul><!-- end gnb -->
+			<div id="t_nav">
+				<ul class="t_gnb">
+					<li><a href="#">CART</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#">SIGN UP</a></li>
+					<li><a href="#">MY PAGE</a></li>
+					<li><a href="#">ORDER</a></li>
+					<li><a href="#">HELP</a></li>
+				</ul><!-- end t_gnb -->
+			</div><!-- end t_nav -->
+		</div><!-- end header -->
+
+	</div><!-- end headerWrap -->
+</div><!-- end visual -->
+<div id="mainContents">
+	<div id="section01">
+		<h2>BEST ITEM</h2>
+		<ul>
+			<li>
+				<a href="#">10sec상품</a>
+				<p>
+					<span class="best_t">10 SEC</span>
+					
+						<span class="txtMgt">10초 만에 살리는 남자피부, 올인원 10 sec</span>
+						<span class="txtRed">런칭 기념 이벤트!</span>
+					<em>
+						<span class="txtLine">33,000</span>
+						<span class="txtRed txtSize">29,700</span>
+					</em>
+				</p>
+			</li>
+			<li>
+				<a href="#">DEAR MATT상품</a>
+				<p>
+					<span class="best_t">DEAR MATT</span>
+					
+						<span class="txtMgt">지성피부를 위한 피지컨트롤 로션</span>
+						<span>맨즈헬스 그루밍 어워드 1위</span>
+					<em>
+						<span class="txtLine">37,000</span>
+						<span class="txtRed txtSize">33,300</span>
+					</em>
+				</p>
+			</li>
+			<li>
+				<a href="#">GET READY상품</a>
+				<p>
+					<span class="best_t">GET READY</span>
+					
+						<span class="txtMgt">티 안내고 가볍게 매너비비</span>
+						<span>강력한 자외선 차단효과</span>
+					<em>
+						<span class="txtLine">22,000</span>
+						<span class="txtRed txtSize">19,800</span>
+					</em>
+				</p>
+			</li>
+		</ul>
+	</div><!-- end section01 -->
+	
+	<div id="section02">	
+	</div><!-- end section02 -->
+
+	<div id="section03">
+		<div id="part01">
+			<a id="better" href="#"></a>	
+			<span id="sc03_t">"그녀가 다가온다"</span>
+			<span>
+				DTRT X BETTER THAN ALCOHOL<br />
+				꿀팁보다 향팁<br />
+				남자, 향과 연애 그 두번째 이야기<br />
+				‘씻고 나온 듯한 향’으로 어필한 지난번 당신의 소개팅은 성공했을까?
+			</span>
+			<p><a class="more" href="#">more</a></p>
+		</div>
+		<div id="part02">
+			<a id="better02" href="#"></a>	
+			<span id="sc03_t02">"일상의 특별함"</span>
+			<span>
+				DTRT X BETTER THAN ALCOHOL<br />
+				꿀팁보다 향팁<br />
+				남자, 향과 연애 그 세번째 이야기<br />
+				사실상 소개팅의 끝판왕은 ‘삼프터’라고 할 수 있다.
+			</span>
+			<p><a class="more" href="#">more</a></p>
+			
+		</div>
+	</div><!-- end section03 -->
+</div><!-- end mainContents -->
+
+<div id="footerWrap">
+	<div id="footer">
+		<span>해브앤비주식회사 DTRT 대표 이진욱 214-87-63681 2008 서울강남-2284</span>
+        <address class="addr">(우-06227) 서울 강남구 논현로 72길 13, 엠스페이스빌딩 4,5.6F</address>
+        <em>고객센터 1544-7077, FAX 02-3462-9051 OPENING AM9:00 - PM6:00 (MON-FRI) LUNCH-TIME AM11:50 - PM12:50</em>
+        <p class="copyright">COPYRIGHT(C) 2008 DTRT Inc All Rights Reserved.</p>
+	</div><!-- end footer -->
+</div><!-- end footerWrap -->
+
+
+</body>
+</html>
